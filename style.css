@@ -136,6 +136,7 @@ header .headr-content img {
     max-width: 450px;
 }
 /* hrader end */
+<<<<<<< HEAD
 
 /* about start */
 #about{
@@ -151,12 +152,30 @@ header .headr-content img {
 }
 
 #about hr {
+=======
+/* skills start */
+/* يمكن تضيفها من بعد مع الجزاء الثاني */
+#skills {
+    padding: 2rem 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+#skills hr {
+>>>>>>> 266e5a5ff6237952852e04e000a23bde4abc8308
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
     border: none;
     margin: 5px auto 0;
 }
+<<<<<<< HEAD
 
 #about .about_contant {
     margin-top: 4rem;
@@ -186,3 +205,38 @@ header .headr-content img {
 
 
 /* about end */
+=======
+#skills {
+    background-color: var(--primary--color);
+}
+#skills .skills-content {
+    margin-top: 2rem;
+    background-color: #0f272d;
+}
+#skills .skills-content .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-content .row .item {
+    color: #fff;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+    border-width: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+#skills .row img {
+    max-width: 40px;
+
+}
+#skills .skills-content .row .item:hover {
+    box-shadow: 10px 10px 10px #00f4ab0c;
+}
+
+/* skills end */
+>>>>>>> 266e5a5ff6237952852e04e000a23bde4abc8308
