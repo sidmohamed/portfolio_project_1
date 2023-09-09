@@ -31,16 +31,9 @@ a {
     text-decoration: none;
 }
 /* utility classes */
-.container{
-max-width: 1100px;
-margin: auto;
-padding: 0 2rem;
-}
-
 .text-primary {
     color: var(--secondary--color);
 }
-
 .btn-primary {
     background-color: var(--secondary--color);
     color: #fff;
@@ -142,7 +135,8 @@ header .headr-content img {
     padding: 6rem 0;
 }
 
-#about h2 {
+#about h2,
+#skills h2{
     text-align: center;
     font-size: 30px;
     color: var(--primary--color);
@@ -150,12 +144,20 @@ header .headr-content img {
     letter-spacing: 1px;
 }
 
-#about hr {
+#about hr,
+#skills hr {
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
     border: none;
     margin: 5px auto 0;
+
+}
+
+/* skills start */
+/* يمكن تضيفها من بعد مع الجزاء الثاني */
+#skills {
+    padding: 2rem 0;
 }
 
 #about .about_contant {
@@ -183,4 +185,40 @@ header .headr-content img {
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
 }
+
+
 /* about end */
+
+#skills {
+    background-color: var(--primary--color);
+}
+#skills .skills-content {
+    margin-top: 2rem;
+    background-color: #0f272d;
+}
+#skills .skills-content .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-content .row .item {
+    color: #fff;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+    border-width: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+#skills .row img {
+    max-width: 40px;
+
+}
+#skills .skills-content .row .item:hover {
+    box-shadow: 10px 10px 10px #00f4ab0c;
+}
+
+/* skills end */
