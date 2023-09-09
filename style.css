@@ -31,16 +31,9 @@ a {
     text-decoration: none;
 }
 /* utility classes */
-.container{
-max-width: 1100px;
-margin: auto;
-padding: 0 2rem;
-}
-
 .text-primary {
     color: var(--secondary--color);
 }
-
 .btn-primary {
     background-color: var(--secondary--color);
     color: #fff;
@@ -136,77 +129,35 @@ header .headr-content img {
     max-width: 450px;
 }
 /* hrader end */
-<<<<<<< HEAD
 
 /* about start */
 #about{
     padding: 6rem 0;
 }
 
-#about h2 {
+#about h2,
+#skills h2{
     text-align: center;
     font-size: 30px;
     color: var(--primary--color);
     font-weight: 600;
     letter-spacing: 1px;
-}
-
-#about hr {
-=======
-/* skills start */
-/* يمكن تضيفها من بعد مع الجزاء الثاني */
-#skills {
-    padding: 2rem 0;
-}
-
-#skills h2 {
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
+
 }
-#skills hr {
->>>>>>> 266e5a5ff6237952852e04e000a23bde4abc8308
+
+#about hr,
+#skills hr{
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
     border: none;
     margin: 5px auto 0;
 }
-<<<<<<< HEAD
+/* skills start */
 
-#about .about_contant {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 3rem;
-}
-
-#about .about_contant .col_1 h3 {
-    font-size: 28px;
-    color: var(--primary--color);
-    margin-bottom: 20px;
-}
-
-#about .about_contant .col_1 p{
-    color: var(--gray);
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-#about .about_contant .col_2 p{
-    color: var(--gray);
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-}
-
-
-/* about end */
-=======
 #skills {
+    padding: 2rem 0;
     background-color: var(--primary--color);
 }
 #skills .skills-content {
@@ -216,7 +167,6 @@ header .headr-content img {
 #skills .skills-content .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
     align-items: center;
     text-align: center;
 }
@@ -239,4 +189,3 @@ header .headr-content img {
 }
 
 /* skills end */
->>>>>>> 266e5a5ff6237952852e04e000a23bde4abc8308
