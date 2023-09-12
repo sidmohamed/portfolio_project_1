@@ -31,6 +31,12 @@ a {
     text-decoration: none;
 }
 /* utility classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
 .text-primary {
     color: var(--secondary--color);
 }
@@ -131,12 +137,12 @@ header .headr-content img {
 /* hrader end */
 
 /* about start */
-#about{
-    padding: 6rem 0;
+
+#about, #skills, #services {
+    padding: 2rem 0;
 }
 
-#about h2,
-#skills h2{
+#about h2, #skills h2, #services h2 {
     text-align: center;
     font-size: 30px;
     color: var(--primary--color);
@@ -144,20 +150,13 @@ header .headr-content img {
     letter-spacing: 1px;
 }
 
-#about hr,
-#skills hr {
+#about hr,#skills hr, #services hr {
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
     border: none;
     margin: 5px auto 0;
 
-}
-
-/* skills start */
-/* يمكن تضيفها من بعد مع الجزاء الثاني */
-#skills {
-    padding: 2rem 0;
 }
 
 #about .about_contant {
@@ -186,11 +185,20 @@ header .headr-content img {
     border-bottom: 1px solid #ddd;
 }
 
-
 /* about end */
+
+/* skills start */
+
+#skills {
+    padding: 2rem 0;
+}
 
 #skills {
     background-color: var(--primary--color);
+}
+#skills h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 #skills .skills-content {
     margin-top: 2rem;
@@ -199,7 +207,6 @@ header .headr-content img {
 #skills .skills-content .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
     align-items: center;
     text-align: center;
 }
@@ -208,10 +215,14 @@ header .headr-content img {
     background-color: #000;
     margin: 20px;
     padding: 1rem;
-    border-width: 10px;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
     transition: all 0.3s ease;
+}
+
+#skills .skills-content .row .item :nth-child(3) img{
+    max-width: 80px;
 }
 #skills .row img {
     max-width: 40px;
@@ -222,3 +233,54 @@ header .headr-content img {
 }
 
 /* skills end */
+
+/* services start*/
+#services {
+    background: #00f4ab0c;
+}
+
+#services .heading {
+    justify-content: center;
+    align-items: center;
+}
+
+#services .heading img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#services .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    text-align: center; 
+    column-gap: 2rem;
+    row-gap: 4rem;
+
+}
+
+#services .row .item {
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transform: all 0.3s ease;
+}
+
+#services .row .item:hover{
+    transform: scale(1.04);
+}
+
+#services .row .item h3 {
+    margin: 15px 0;
+    color: var(--primary--color);
+}
+
+#services .row .item p {
+    font-size: 14px;
+}
+
+#services .row .item img {
+    width: 120px;
+}
+/* services end*/
