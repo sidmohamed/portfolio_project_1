@@ -16,8 +16,7 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;   
 }
 
 h1.h2 {
@@ -30,6 +29,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 /* utility classes */
 .container {
     max-width: 1100px;
@@ -45,6 +45,8 @@ a {
     color: #fff;
     padding: 8px 20px;
     font-size: 14px;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
 }
 .btn-primary:hover {
@@ -142,7 +144,7 @@ header .headr-content img {
     padding: 2rem 0;
 }
 
-#about h2, #skills h2, #services h2 {
+#about h2, #skills h2, #services h2, #contact h2 {
     text-align: center;
     font-size: 30px;
     color: var(--primary--color);
@@ -150,7 +152,7 @@ header .headr-content img {
     letter-spacing: 1px;
 }
 
-#about hr,#skills hr, #services hr {
+#about hr, #skills hr, #services hr, #contact hr {
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
@@ -235,7 +237,7 @@ header .headr-content img {
 /* skills end */
 
 /* services start*/
-#services {
+#services,#contact {
     background: #00f4ab0c;
 }
 
@@ -284,3 +286,35 @@ header .headr-content img {
     width: 120px;
 }
 /* services end*/
+
+/* contact start */
+#contact {
+    padding: 4rem 0;
+}
+
+#contact .row {
+    margin-top: 4ram;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    background: #fff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#contact .row input, #contact .row textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #00f4ab0c;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+#contact .row img{
+    width: 490px;
+}
+
+/* contact end */
