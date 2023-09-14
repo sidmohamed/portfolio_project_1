@@ -160,6 +160,12 @@ header .headr-content img {
     padding: 2rem 0;
     background-color: var(--primary--color);
 }
+#skills h2 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+
+}
 #skills .skills-content {
     margin-top: 2rem;
     background-color: #0f272d;
