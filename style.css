@@ -316,5 +316,14 @@ header .headr-content img {
 #contact .row img{
     width: 490px;
 }
-
 /* contact end */
+
+/* footer start */
+#footer{
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; 
+}
+
+/* footer end */
