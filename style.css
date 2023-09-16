@@ -148,7 +148,7 @@ header .headr-content img {
     padding: 2rem 0;
 }
 
-#about h2, #skills h2, #services h2, #contact h2 {
+#about h2, #skills h2, #services h2, #contact h2, #portfolio h2 {
     text-align: center;
     font-size: 30px;
     color: var(--primary--color);
@@ -156,7 +156,7 @@ header .headr-content img {
     letter-spacing: 1px;
 }
 
-#about hr, #skills hr, #services hr, #contact hr {
+#about hr, #skills hr, #services hr, #contact hr, #portfolio hr {
     width: 100px;
     height: 3px;
     background-color: var(--secondary--color);
@@ -291,6 +291,66 @@ header .headr-content img {
     width: 120px;
 }
 /* services end*/
+
+/* portfolio start*/
+#portfolio {
+    background-color: var(--primary--color);
+    padding: 2rem 0;
+}
+#portfolio h2 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#portfolio .heading img {
+    width: 250px;
+    margin-right: 100px;
+}
+
+#portfolio .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    text-align: center; 
+    column-gap: 2rem;
+    row-gap: 4rem;
+
+}
+
+#portfolio .row .item {
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transform: all 0.3s ease;
+    text-align: left;
+}
+
+#portfolio .row .item:hover{
+    transform: scale(1.04);
+}
+
+#portfolio .row .item h3 {
+    margin: 15px 0;
+    color: var(--primary--color);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+
+#portfolio .row .item img {
+    width: 320px;
+}
+#portfolio .row .item a {
+    color: var(--secondary--color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+/* services end*/
+
 
 /* contact start */
 #contact {
